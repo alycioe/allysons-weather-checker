@@ -13,18 +13,35 @@
             <h1>5 Day Weather Forecast</h1>
         </header>
         <div class="row">
-            <div class="col-sm-4 bg-light">
+            <div class="col-md-4 border border-dark rounded m-3">
                 <h2 class="text-center">Search for a City:</h2>
                 <input id="search-city" class="form-control form-control-sm w-50 mx-auto" type="text" placeholder="Enter City Here">
                 <div class="input-group-append text-center pt-3">
-                    <button class="btn btn-primary" type="button" id="clear-history">Search</button>
+                    <button class="btn btn-primary" type="button" id="search-city">Search</button>
                 </div>
             </div>
-            <div>
-                <!--This will be where current day is highlighted-->
+            <!--This will be where current day is selected to display weather-->
+            <div class="col-md-8 bg-light w-50 m-3">
+                <div class="row ml-2 border border-dark rounded">
+                    <div class="col-sm-12" id="current-weather">
+                        <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                        <p>Temperature:<span class="current" id="temperature"></span></p>
+                        <p>Humidity:<span class="current" id="humidity"></span></p>
+                        <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <!--This will be where forecast is-->
+            <!--This is where the past searches are stored-->
+            <div class="col-md-4 m-2">
+                <div class="ml-2 border border-dark rounded">
+
+                </div>
+            </div>
+            <!--This will be where forecast is-->
+            <div class="col-md-8 bg-light">
+                <div class="row border border-dark rounded">
+                    
+                </div>
             </div>
         </div>
         <script src="assets/javascript/script.js"></script>
